@@ -479,10 +479,126 @@
       </div>
     </section>
 
+    <!--* contact form with tool-tips -->
+    <section id="contact">
+
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Get in Touch</h2>
+          <p class="lead">
+            Questions to ask? Fill out the form to contact me directly...
+          </p>
+        </div>
+
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-6">
+            <form>
+              <!-- Email Field -->
+              <div class="input-group mb-4">
+                <span class="input-group-text"
+                  ><i class="bi bi-envelope-open-fill text-secondary"></i
+                ></span>
+                <div class="form-floating">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInputGroup1"
+                    placeholder="example@gmail.com"
+                  />
+                  <label for="floatingInputGroup1" class="form-label">Email</label>
+                </div>
+                <span class="input-group-text">
+                  <span
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    title="Enter an email address we can reply to."
+                  >
+                    <i class="bi bi-question-circle text-muted"></i>
+                  </span>
+                </span>
+              </div>
+
+              <!-- Name Field -->
+              <div class="input-group mb-4">
+                <span class="input-group-text"
+                  ><i class="bi bi-person-fill text-secondary"></i
+                ></span>
+                <div class="form-floating">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInputGroup2"
+                    placeholder="Husen Hamzeh"
+                  />
+                  <label for="floatingInputGroup2" class="form-label">Your Name</label>
+                </div>
+                <span class="input-group-text">
+                  <span
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    title="Pretty self explanatory really..."
+                  >
+                    <i class="bi bi-question-circle text-muted"></i>
+                  </span>
+                </span>
+              </div>
+
+              <!-- Question Field -->
+              <div class="input-group mb-4">
+                <span class="input-group-text"
+                  ><i class="bi bi-chat-right-dots-fill text-secondary"></i
+                ></span>
+
+                <select
+                  id="subject"
+                  class="form-select"
+                  aria-label="question subject"
+                >
+                  <option value="pricing" selected>Pricing query</option>
+                  <option value="content">Content query</option>
+                  <option value="other">Other query</option>
+                </select>
+
+                <span class="input-group-text">
+                  <span
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    title="What is your question about?"
+                  >
+                    <i class="bi bi-question-circle text-muted"></i>
+                  </span>
+                </span>
+              </div>
+
+              <!-- Query Field & button-->
+              <div class="input-group mb-5">
+                <span class="input-group-text text-muted">Your query</span>
+
+                <div class="form-floating">
+                  <textarea
+                    id="query"
+                    class="form-control"
+                    aria-label="Write there"
+                    style="height: 100px"
+                  ></textarea>
+                  <label for="query" class="form-label">Write there</label>
+                </div>
+              </div>
+
+              <div class="mb-4 text-center">
+                <button type="submit" class="btn btn-secondary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <scrip src="tooltips.js"></scrip>
   </body>
 </html>
